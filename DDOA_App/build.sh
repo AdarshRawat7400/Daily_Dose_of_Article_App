@@ -12,3 +12,4 @@ flask db init
 # Run database migrations
 flask db migrate
 
+flask db upgrade
