@@ -1,5 +1,7 @@
 #!/bin/bash
 
+
+set -o erexit
 # Create a virtual environment
 python -m venv venv
 
