@@ -1,9 +1,8 @@
 #!/bin/bash
 
-apt-get install sudo
 # Install Python 3.9
-sudo apt-get update
-sudo apt-get install python3.9
+apt-get update
+apt-get install python3.9
 
 # Create a virtual environment
 python3.9 -m venv venv
