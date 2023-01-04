@@ -5,9 +5,9 @@ from flask_migrate import Migrate
 from flask_mail import Mail
 
 app = Flask(__name__)
-app.secret_key = 'secret123'
+app.secret_key = config("SECRET_KEY")
 
-app.config['SQLALCHEMY_DATABASE_URI'] =  ''
+app.config['SQLALCHEMY_DATABASE_URI'] =  config("SQLALCHEMY_DATABASE_URI")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
