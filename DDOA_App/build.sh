@@ -1,5 +1,6 @@
 #!/bin/bash
 
+apt-get install sudo
 # Install Python 3.9
 sudo apt-get update
 sudo apt-get install python3.9
