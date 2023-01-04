@@ -1,11 +1,7 @@
 #!/bin/bash
 
-# Install Python 3.9
-apt-get update
-apt-get install python3.9
-
 # Create a virtual environment
-python3.9 -m venv venv
+python -m venv venv
 
 # Activate the virtual environment
 source venv/bin/activate
