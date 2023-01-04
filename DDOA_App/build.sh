@@ -14,3 +14,6 @@ flask db init
 
 # Run database migrations
 flask db migrate
+
+
+gunicorn app:app
